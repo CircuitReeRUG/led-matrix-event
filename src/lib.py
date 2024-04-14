@@ -68,4 +68,6 @@ class Display:
 
     # Method to clear the display
     def clear(self):
-        self.buffer = bytearray(self.size * 8)  # Reset the buffer to all zeros
+        # Clear the buffer by setting all values to 0
+        for i in range(len(self.buffer)):
+            self.buffer[i] = 0

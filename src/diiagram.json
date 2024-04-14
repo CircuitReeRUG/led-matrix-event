@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "author": "CircuitRee",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-pi-pico", "id": "pico", "top": -127.95, "left": 195.6, "attrs": {} },
+    {
+      "type": "wokwi-max7219-matrix",
+      "id": "matrix1",
+      "top": -105,
+      "left": -24.99,
+      "attrs": { "chain": "1" }
+    }
+  ],
+  "connections": [
+    [ "pico:GP0", "$serialMonitor:RX", "", [] ],
+    [ "pico:GP1", "$serialMonitor:TX", "", [] ],
+    [ "matrix1:V+", "pico:3V3", "red", [ "v-48", "h181.2" ] ],
+    [ "matrix1:GND", "pico:GND.1", "black", [ "h38.4", "v-19.2" ] ],
+    [ "matrix1:DIN", "pico:GP3", "blue", [ "h0" ] ],
+    [ "matrix1:CS", "pico:GP5", "cyan", [ "h0" ] ],
+    [ "matrix1:CLK", "pico:GP2", "violet", [ "h48", "v-38.4" ] ]
+  ],
+  "dependencies": {}
+}
