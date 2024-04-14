@@ -1,5 +1,10 @@
 # Source files for the LED Matrix event repo
-![Conway](img/conway.jpeg)
+<p align="center">
+  <img src="img/conway.jpeg" width="400"/>
+  <img src="img/circuit.png" width="400"/>
+</p>
+
+
 * lib/ - library for the matrix
 * [VSCode extension for micropython](https://marketplace.visualstudio.com/items?itemName=paulober.pico-w-go)
 * [C++ library](https://github.com/JemRF/max7219/blob/master/max7219.cpp)
