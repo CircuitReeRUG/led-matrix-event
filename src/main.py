@@ -84,26 +84,7 @@ def heart():
     display.clear()
     display.show()
 
-def logo():
-    logo = bytearray(
-        [0b11111111,
-         0b11111111, 
-         0b11100111, 
-         0b11111111, 
-         0b11000011, 
-         0b11111111, 
-         0b11111111, 
-         0b11111111
-         ]
-    )
-    
-    display.set_pixels(logo)
-    display.show()
-    sleep(5)
-    display.clear()
-    display.show()
     
 if __name__ == "__main__":
     heart()
-    logo()
     game_of_life()
