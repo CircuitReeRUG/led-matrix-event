@@ -1,11 +1,9 @@
 from lib import Display
-from random import randint # Used by conway
+from random import randint  # Used by conway
 from utime import sleep
 
 # Create a Display object with SPI settings and number of cascaded devices
-display = Display(
-        spi=0, sck=2, mosi=3, cs=5, size=1
-    )  # SPI0, SCK=2, MOSI=3, CS=5, 1 device
+display = Display(spi=0, sck=2, mosi=3, cs=5, size=1)
 display.init()  # Initialize the display with default settings
 
 
@@ -35,7 +33,6 @@ def game_of_life():
                     new_matrix[x][y] = 1
         return new_matrix
 
-    
     def show_board(display) -> None:
         res = bytearray(8)
         for x in range(8):
@@ -43,7 +40,6 @@ def game_of_life():
                 if conway[x][y]:
                     res[y] |= 1 << x
         display.set_pixels(res)
-        
 
     # Main loop
     while True:
@@ -51,13 +47,12 @@ def game_of_life():
         conway = step(conway)  # Calculate the next generation
         # Create a byte array to store the pixel data
         show_board(display)  # Display it on the LED matrix
-        display.show()  # Update the physical display
-        sleep(.1)  # Wait a bit before the next generation
-        
-        
+        sleep(0.1)  # Wait a bit before the next generation
+
+
 def heart():
     # Create a Display object with SPI settings and number of cascaded devices
-    
+
     # Create a heart shape using a matrix of pixels
     heart = bytearray(
         [
@@ -75,16 +70,14 @@ def heart():
     # Display the heart shape on the display
     display.set_pixels(heart)
     # display.set_pixel(0, 0, 1)
-    display.show()
 
     # Delay for 5 seconds
     sleep(5)
 
     # Clear the display
     display.clear()
-    display.show()
 
-    
+
 if __name__ == "__main__":
     heart()
     game_of_life()

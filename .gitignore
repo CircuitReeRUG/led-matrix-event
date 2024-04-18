@@ -1,0 +1,13 @@
+material/slides/end.aux
+material/slides/pres.snm
+
+# Tex garbage
+*.aux
+*.log
+*.out
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.nav
+*.snm
+*.toc
