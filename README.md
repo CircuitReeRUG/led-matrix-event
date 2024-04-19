@@ -5,9 +5,26 @@
 </p>
 
 
-* lib/ - library for the matrix
-* [VSCode extension for micropython](https://marketplace.visualstudio.com/items?itemName=paulober.pico-w-go)
-* [C++ library](https://github.com/JemRF/max7219/blob/master/max7219.cpp)
+## TODOs (rough timeline)
+### Week 1 (until 23rd of April ideally)
+- [ ] Submit Cover event
+	- [ ] Figure out entrance fee
+	- [ ] Make a couple of posters
+- [ ] Finalize content
+
+### Week 2 (until 30th of April ideally)
+- [ ] Begin work on presentations
+- [ ] Devices arrive
+- [ ] Build & test (and package)
+- [ ] Find a room
+- [ ] Finish presentations
+
+### Until 6th of May
+- [ ] Event!
+	- [ ] Present!
+
+## Useful links
+* [VSCode extension](https://marketplace.visualstudio.com/items?itemName=paulober.pico-w-go)
 * [Datasheet - segment](https://datasheets.maximintegrated.com/en/ds/MAX7219-MAX7221.pdf)
 * [Datasheet - matrix](https://www.farnell.com/datasheets/29075.pdf)
 * [Wokwi](https://wokwi.com/projects/394989199420917761)

@@ -11,3 +11,6 @@ material/slides/pres.snm
 *.nav
 *.snm
 *.toc
+
+.micropico
+.vscode/
