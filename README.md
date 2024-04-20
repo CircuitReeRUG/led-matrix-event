@@ -7,8 +7,8 @@
 
 ## TODOs (rough timeline)
 ### Week 1 (until 23rd of April ideally)
-- [ ] Submit Cover event
-	- [ ] Figure out entrance fee
+- [x] Submit Cover event
+	- [x] Figure out entrance fee
 	- [ ] Make a couple of posters
 - [ ] Finalize content
 
