@@ -9,14 +9,14 @@
 ### Week 1 (until 23rd of April ideally)
 - [x] Submit Cover event
 	- [x] Figure out entrance fee
-	- [ ] Make a couple of posters
+	- ~~[ ] Make a couple of posters~~ - We are full lol
 - [ ] Finalize content
 
 ### Week 2 (until 30th of April ideally)
-- [ ] Begin work on presentations
-- [ ] Devices arrive
+- [x] Begin work on presentations
+- [x] Devices arrive
 - [ ] Build & test (and package)
-- [ ] Find a room
+- [x] Find a room - 
 - [ ] Finish presentations
 
 ### Until 6th of May
