@@ -1,7 +1,7 @@
-# Source files for the LED Matrix event repo
 <p align="center">
-  <img src="img/conway.jpeg" width="400"/>
-  <img src="img/circuit.png" width="400"/>
+	<h1>Code your own Matrix!</h1>
+	<h2> Repository </h2>
+	<img src="img/banner.png" alt="banner" width="100%">
 </p>
 
 
@@ -16,7 +16,7 @@
 - [x] Begin work on presentations
 - [x] Devices arrive
 - [ ] Build & test (and package)
-- [x] Find a room - 
+- [x] Find a room 
 - [ ] Finish presentations
 
 ### Until 6th of May
