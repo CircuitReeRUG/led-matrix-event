@@ -46,9 +46,19 @@ def game_of_life():
         display.clear()  # Clear the display
         conway = step(conway)  # Calculate the next generation
         # Create a byte array to store the pixel data
-        show_board(display)  # Display it on the LED matrix
+        display.set_pixels(conway)
         sleep(0.1)  # Wait a bit before the next generation
-
+        # if board is dead, blink the whole board twice and restart
+        if not any(any(row) for row in conway):
+            for _ in range(2):
+                display.clear()
+                sleep(1)
+                # Create a byte array of 1s
+                ones = [0xFF for _ in range(8)]
+                display.set_pixels(ones)
+                sleep(1)
+                display.clear()
+            conway = [[randint(0, 1) for _ in range(8)] for _ in range(8)]
 
 def heart():
     # Create a Display object with SPI settings and number of cascaded devices
